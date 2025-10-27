@@ -8,6 +8,7 @@ const getFavoritos = (req, res) => {
         res.status(500).send(error.message)
     }
 }
+
 const postFavorito = (req, res) => {
     try {
         const id = req.params.id
@@ -17,6 +18,7 @@ const postFavorito = (req, res) => {
         res.status(500).send(error.message)
     }
 }
+
 const deleteFavorito = (req, res) => {
     try {
         const id = req.params.id;
